@@ -1,8 +1,10 @@
 #!/usr/bin/env zsh
 set -e
 CURRENT_DIR=$(pwd)
-INPUT="cv"
-OUT="$CURRENT_DIR/out"
-/usr/bin/env lualatex -output-directory $OUT code/$INPUT.tex
+INPUT="$CURRENT_DIR/code"
+OUT="$CURRENT_DIR/fin"
+mkdir -p $OUT
+cd $INPUT
+/usr/bin/env lualatex -output-directory $OUT $INPUT/cv.tex
 echo "output generated at: $OUT/$INPUT.pdf"
-rm $OUT/$INPUT.{aux,log,out}
+rm $OUT/*.{aux,log,out}
