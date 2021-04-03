@@ -133,3 +133,15 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \newcommand{\jobtechnologies}[1]{
 \rule{0mm}{5mm}\textbf{Technologies:} #1   
 }
+
+\newcommand{\opensource}[2]{
+\begin{tabbing}
+\hspace{2cm} \= \kill
+\textbf{#1} \>
+\begin{minipage}{\smallertextwidth}
+\vspace{2mm}
+#2
+\end{minipage}
+\end{tabbing}
+\vspace{2mm}
+}

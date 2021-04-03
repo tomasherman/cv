@@ -21,6 +21,14 @@
 \documentclass[10pt]{article} % Default font size
 
 \input{structure.tex} % Include the file specifying document layout
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 
 %----------------------------------------------------------------------------------------
 
@@ -37,17 +45,18 @@
 \parbox{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Address} \>Prague,\\ % Address line 1
+{\bf \faicon{map-marker} Address} \>Prague,\\ % Address line 1
 \> Czech Republic \\ % Address line 2
-{\bf Date of Birth} \> 21$^{st}$ February 1989 \\ % Date of birth 
-{\bf Nationality} \> Czech % Nationality
+{\bf \faicon{birthday-cake} Date of Birth} \> 21$^{st}$ February 1989 \\ % Date of birth 
+{\bf \faicon{flag} Nationality} \> Czech % Nationality
 \end{tabbing}}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Phone} \> +420 728 466 416 \\ % Mobile phone
-{\bf Email} \> \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com} \\ % Email address
+{\bf \faicon{phone} Phone} \> +420 728 466 416 \\ % Mobile phone
+{\bf \faicon{envelope} Email} \> \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com} \\ % Email address
+{\bf \faicon{github} GitHub} \> \href{https://github.com/tomasherman}{github.com/tomasherman}
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -55,11 +64,8 @@
 %----------------------------------------------------------------------------------------
 
 \section{Open source}
-
-\tabbedblock{
-\bf{\href{https://github.com/avast/datadog4s}{datadog4s}} \> Library for easy monitoring of cats-effect based Scala 
-applications with \href{https://www.datadoghq.com/}{Datadog}.
-}
+\opensource{\href{https://github.com/avast/datadog4s}{datadog4s}}{Library for easy monitoring of cats-effect based Scala 
+applications with \href{https://www.datadoghq.com/}{Datadog}. Developed for Avast but maintained, designed and developed mostly by me.}
 
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT HISTORY SECTION
@@ -141,13 +147,6 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
     \> As a final project I wrote Minecraft server in Scala and Akka 
 }
 
-%------------------------------------------------
-
-\tabbedblock{
-\bf{2004-2008} \> General sciences - \href{http://www.mssch.cz/}{Masaryks high school of chemistry, Prague, CZ}\\[5pt]
-}
-
-
 %----------------------------------------------------------------------------------------
 %	IT/COMPUTING SKILLS SECTION
 %----------------------------------------------------------------------------------------
@@ -190,6 +189,17 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 }
 
 %----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\interestsgroup{
+\interest{Czech - native}
+\interest{English - very good, successfully used in business setting}
+}
+
+
+%----------------------------------------------------------------------------------------
 %	OTHER SECTION
 %----------------------------------------------------------------------------------------
 
@@ -199,9 +209,6 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 \textit{Rock/Sport climbing instructor qualification by \href{https://www.horosvaz.cz/}{Czech Rockclimbing association}}\\
 \textit{3 years of teaching rock-climbing to beginners as a hobby}
 }
-
-
-
 
 %----------------------------------------------------------------------------------------
 %	REFEREE SECTION
