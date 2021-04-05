@@ -135,13 +135,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 }
 
 \newcommand{\opensource}[2]{
-\begin{tabbing}
-\hspace{2cm} \= \kill
-\textbf{#1} \>
-\begin{minipage}{\smallertextwidth}
-\vspace{2mm}
-#2
-\end{minipage}
-\end{tabbing}
-\vspace{2mm}
+\tabbedblock{
+\bf{#1} \> #2
+}
 }

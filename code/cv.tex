@@ -1,3 +1,5 @@
+% !TEX pdflua
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wilson Resume/CV
 % XeLaTeX Template
@@ -64,8 +66,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Open source}
-\opensource{\href{https://github.com/avast/datadog4s}{datadog4s}}{Library for easy monitoring of cats-effect based Scala 
-applications with \href{https://www.datadoghq.com/}{Datadog}. Developed for Avast but maintained, designed and developed mostly by me.}
+\opensource{\href{https://github.com/avast/datadog4s}{datadog4s}}{Monitoring library for Cats-Effect based scala application.}
 
 %----------------------------------------------------------------------------------------
 %	EMPLOYMENT HISTORY SECTION
@@ -78,8 +79,8 @@ applications with \href{https://www.datadoghq.com/}{Datadog}. Developed for Avas
 {Avast Software, Prague}
 {http://www.avast.com}
 {Team Lead, Senior Software engineer}
-{Promoted to the position of Team lead of 3 (and later 6) backend-developers. In addition to Team Lead duties (1 on 1s, Sprint plannings etc), I also spend a lot of time
-talking to Product about new features, improvements and ideas. I help design said features and make sure they get implemented on time and in adequate quality. I take care about make sure that
+{Promoted to the position of Team lead of 3 (and later 6) backend-developers. In addition to Team Lead duties (1 on 1s, Sprint plannings, hiring (for mine and other teams) etc), I also spent a lot of time
+talking to Product about new features, improvements and ideas. I helped design said features and make sure they get implemented on time and in adequate quality. I took care about make sure that
 estimates are realistic and what we commit to is feasible and relevant. \\
 
 \jobtechnologies{Scala, Cassandra, Kafka, RabbitMQ, Netty, Http4s, cats-effect, Netty, Kubernetes, Helm, AWS, Terraform}}
@@ -92,15 +93,15 @@ estimates are realistic and what we commit to is feasible and relevant. \\
 {http://www.avast.com}
 {Software Engineer}
 {As a Software Engineer I worked on many different services, all related to providing/processing data to/from Avast Anti Virus. In addition to coding,
-i played a big role in introducing Functional Programming to engineers that were already working in \emph{Scala as a better Java} mode. \\
-To do that, I (with few others) prepared many talks, libraries etc to introduce FP concepts/techniques to my colleagues. Some interesting projects I worked on:
+I played a big role in introducing Functional Programming to engineers that were already working in \emph{Scala as a better Java} mode. \\
+To do that, I (with few others) prepared many talks, libraries, workshops etc. to introduce FP concepts/techniques to my colleagues. Some interesting projects I worked on:
 \begin{itemize}
-    \item DNS proxy written in Netty
-    \item System for scanning Android APKs from 3rd parties
-    \item High throughput, highly cost-sensitive websocket server for \href{https://www.avast.com/en-us/omni}{Omni project}
+    \item DNS proxy written in Netty \& Scala
+    \item System for scanning Android APKs from Avast partners
+    \item High throughput, highly cost-sensitive websocket server for \href{https://www.avast.com/en-us/omni}{Avast Omni} project
 \end{itemize}
 
-In addition to SW Engineer workload I've been a L1 on-call support for automated tests and monitors.
+In addition to SW Engineer workload I've been part of a L1 on-call rotation for automated tests and monitors.
 
 \jobtechnologies{See Above}}
 
@@ -111,8 +112,8 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 {Golem Trading for Wikidi, Prague, Czech Republic}
 {https://www.golemtrader.com/}
 {Software engineer}
-{I returned to Wikidi to work in a very small team on Golem trading platform. I worked on \emph{Trader} app which made decision about trading and i also written a UI for the founder/thought leader to watch/control what the trader is doing. Eventually I became the lead for the platform. Eventually we moved to cryptocurrencies.\\
-\jobtechnologies{Java, Kotlin, \href{https://en.wikipedia.org/wiki/Financial_Information_eXchange}{FIX}, ReactJS, Google Sheets updated by Python}}
+{I returned to Wikidi to work in a very small team on Golem trading platform. I worked on \emph{Trader} app which made decision about trading and I also wrote an UI for the founder/thought leader to watch/control what the trader is doing. Eventually I became the lead for the platform. \\
+\jobtechnologies{Java, Kotlin, \href{https://en.wikipedia.org/wiki/Financial_Information_eXchange}{FIX}, ReactJS, Google Sheets updated via Python}}
 
 %------------------------------------------------
 
@@ -121,7 +122,7 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 {Spinoco, Prague, Czech Republic}
 {https://www.spinoco.com/}
 {Solution Designer}
-{Worked as a full-stack developer in a small team on a Telco app, which used very advanced Scala concepts/tools like scalaz-streams or ScalaJS. In addition to developer work I also had a chance to inteact with clients and even been on a sales meeting.\\
+{Worked as a full-stack (but mostly back-end) developer in a small team on a Telco app, which used very advanced Scala concepts/tools like scalaz-streams or ScalaJS. In addition to developer work I also had a chance to interact with clients and even attended a sales meeting.\\
 \jobtechnologies{Scala(JS), Scalaz Streams (later evolved into FS2 streams), Scalaz, Play Framework, Cassandra}}
 
 %------------------------------------------------
@@ -143,8 +144,8 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 \section{Education}
 
 \tabbedblock{
-\bf{2008-2012} \> BCs. in Intelligent systems - \href{https://www.cvut.cz/}{Czech Technical University, Prague} \\[5pt]
-    \> As a final project I wrote Minecraft server in Scala and Akka 
+\bf{2008-2012} \> BCs. in Intelligent Systems - \href{https://www.cvut.cz/}{Czech Technical University, Prague} \\[5pt]
+    \> As a final project I wrote MineCraft server in Scala and Akka 
 }
 
 %----------------------------------------------------------------------------------------
@@ -156,8 +157,8 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 \skillgroup{Programming Languages}
 {
 \textit{Scala} - Lot of experience with typelevel stack (http4s, cats-effect, etc)\\
-\textit{Python} - Used in past and for ad-hoc scripts etc\\
-\textit{Java} - Used in past\\
+\textit{Python} - Used in past and for ad-hoc scripts etc.\\
+\textit{Java} - Used in past and at University\\
 }
 
 %------------------------------------------------
@@ -165,14 +166,14 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 \skillgroup{Operations and Cloud}
 {
 \textit{Kubernetes, Helm} - maintenance and development of helm/kubernetes services\\
-\textit{AWS, Terraform, Spinnaker} - user level experience\\
-\textit{Grafana, Datadog, Icinga, VictorOps} - used to make sure the code behaves as it should \\
+\textit{AWS, Terraform, Spinnaker} - as a user, not as administrator \\
+\textit{Grafana, Datadog, Icinga, VictorOps} - as a user, not as administrator \\
 }
 
 \skillgroup{Others}
 {
 \textit{Git, Bash} \\
-\textit{Cassandra, Kafka, RabbitMQ}
+\textit{Cassandra, Kafka, RabbitMQ, SQL Databases}
 }
 
 
@@ -206,7 +207,7 @@ In addition to SW Engineer workload I've been a L1 on-call support for automated
 \section{Others}
 \skillgroup{Rock Climbing instructor}
 {
-\textit{Rock/Sport climbing instructor qualification by \href{https://www.horosvaz.cz/}{Czech Rockclimbing association}}\\
+\textit{Rock/Sport climbing instructor qualification by \href{https://www.horosvaz.cz/}{Czech rock climbing association}}\\
 \textit{3 years of teaching rock-climbing to beginners as a hobby}
 }
 
