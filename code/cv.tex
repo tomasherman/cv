@@ -25,6 +25,7 @@
 \input{structure.tex} % Include the file specifying document layout
 \usepackage{fontawesome}
 \usepackage{xcolor}
+\usepackage{graphicx}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -45,22 +46,24 @@
 %------------------------------------------------
 
 \parbox{0.5\textwidth}{ % First block
-\begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+    \begin{tabbing} % Enables tabbing
+        \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
 {\bf \faicon{map-marker} Address} \>Prague,\\ % Address line 1
 \> Czech Republic \\ % Address line 2
 {\bf \faicon{birthday-cake} Date of Birth} \> 21$^{st}$ February 1989 \\ % Date of birth 
-{\bf \faicon{flag} Nationality} \> Czech % Nationality
+{\bf \faicon{flag} Nationality} \> Czech \\ % Nationality
+{\bf \faicon{phone} Phone} \> +420 728 466 416 \\ % Mobile phone
+{\bf \faicon{envelope} Email} \> \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com} \\ % Email address
+{\bf \faicon{github} GitHub} \> \href{https://github.com/tomasherman}{github.com/tomasherman} \\
+{\bf \faicon{language} Languages} \> Czech-> Native\\
+        \> English -> Very good
+
 \end{tabbing}}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf \faicon{phone} Phone} \> +420 728 466 416 \\ % Mobile phone
-{\bf \faicon{envelope} Email} \> \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com} \\ % Email address
-{\bf \faicon{github} GitHub} \> \href{https://github.com/tomasherman}{github.com/tomasherman} \\
-{\bf \faicon{language} Languages} \> Czech - Native\\
-\> English -> Very good
+\fbox{\includegraphics[height=4cm]{photo.jpeg}} \\
 \end{tabbing}}
 
 %----------------------------------------------------------------------------------------
@@ -77,12 +80,23 @@
 \section{Employment History}
 
 \job
-{Aug 2019 -}{Present}
+{Aug 2021 -}{Present}
+{Avast Software, Prague}
+{http://www.avast.com}
+{Senior Software/Data engineer}
+{After \href{https://www.avast.com/en-us/omni}{Omni project} was cancelled and my team dissolved, I joined an existing Data Lake team. I was tasked with making various improvements
+to many of the existing components of the big data solution. Most notable of which was to participate on migration and modernisation of the components from on-prem Cloudera stack to a Cloud based solution.\\
+
+\jobtechnologies{Scala, Java, Kafka, Kubernetes, GCP}}
+
+
+\job
+{Aug 2019-}{Aug 2021}
 {Avast Software, Prague}
 {http://www.avast.com}
 {Team Lead, Senior Software engineer}
-{Promoted to the position of Team lead of 3 (and later 6) backend-developers. In addition to Team Lead duties (1 on 1s, Sprint plannings, hiring (for mine and other teams) etc), I also spent a lot of time
-talking to Product about new features, improvements and ideas. I helped design said features and make sure they get implemented on time and in adequate quality. I took care about make sure that
+{Promoted to lead a team of 3 (and later 6) backend-developers at \href{https://www.avast.com/en-us/omni}{Omni project}. In addition to Team Lead duties (1 on 1s, Sprint plannings, hiring (for mine and other teams) etc), I also spent a lot of time
+talking to Product about new features, improvements and ideas. I helped design said features and make sure they get implemented on time and in adequate quality. I took care about making sure that
 estimates are realistic and what we commit to is feasible and relevant. \\
 
 \jobtechnologies{Scala, Cassandra, Kafka, RabbitMQ, Netty, Http4s, cats-effect, Netty, Kubernetes, Helm, AWS, Terraform}}
@@ -94,16 +108,14 @@ estimates are realistic and what we commit to is feasible and relevant. \\
 {Avast Software, Prague}
 {http://www.avast.com}
 {Software Engineer}
-{As a Software Engineer I worked on many different services, all related to providing/processing data to/from Avast Anti Virus. In addition to coding,
-I played a big role in introducing Functional Programming to engineers that were already working in \emph{Scala as a better Java} mode. \\
-To do that, I (with few others) prepared many talks, libraries, workshops etc. to introduce FP concepts/techniques to my colleagues. Some interesting projects I worked on:
+{As a Software Engineer I worked on many different services, all related to providing/processing data to/from Avast AntiVirus and other supporting systems. In addition to coding,
+    I played a big role in introducing (Scala) Functional Programming to engineers that were already working in \emph{Scala as a better Java} mode.
+To do that, I (with few others) prepared many talks, libraries, workshops etc. \\ Some interesting projects I worked on:
 \begin{itemize}
     \item DNS proxy written in Netty \& Scala
-    \item System for scanning Android APKs from Avast partners
+    \item System for scanning Android APKs for Avast partners
     \item High throughput, highly cost-sensitive websocket server for \href{https://www.avast.com/en-us/omni}{Avast Omni} project
 \end{itemize}
-
-In addition to SW Engineer workload I've been part of a L1 on-call rotation for automated tests and monitors.
 
 \jobtechnologies{See Above}}
 
@@ -168,7 +180,7 @@ In addition to SW Engineer workload I've been part of a L1 on-call rotation for 
 \skillgroup{Operations and Cloud}
 {
 \textit{Kubernetes, Helm} - maintenance and development of helm/kubernetes services\\
-\textit{AWS, Terraform, Spinnaker} - as a user, not as administrator \\
+\textit{AWS, GCP, Terraform, Spinnaker} - as a user, not as administrator \\
 \textit{Grafana, Datadog, Icinga, VictorOps} - as a user, not as administrator \\
 }
 
@@ -200,7 +212,7 @@ In addition to SW Engineer workload I've been part of a L1 on-call rotation for 
 \skillgroup{Rock Climbing instructor}
 {
 \textit{Rock/Sport climbing instructor qualification by \href{https://www.horosvaz.cz/}{Czech rock climbing association}}\\
-\textit{3 years of teaching rock-climbing to beginners as a hobby}
+\textit{5 years of teaching rock-climbing to beginners as a hobby}
 }
 
 %----------------------------------------------------------------------------------------
