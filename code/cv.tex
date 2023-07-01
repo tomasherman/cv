@@ -23,7 +23,7 @@
 \documentclass[10pt]{article} % Default font size
 
 \input{structure.tex} % Include the file specifying document layout
-\usepackage{fontawesome5}
+\usepackage{fontawesome}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \hypersetup{
@@ -49,16 +49,17 @@
 %------------------------------------------------
 
     \parbox{0.5\textwidth}{ % First block
-        \begin{tabular}{ m{0.5em} m{5.5em} m{12em} } % Enables tabbing
-            \faIcon{map-marker}    & \textbf{Address}     & Prague,                                                       \\
-            &                      & Czech Republic                                                \\% Address line 2
-            \faIcon{birthday-cake} & \textbf{Birthday}    & 21$^{st}$ February 1989                                       \\ % Date of birth
-            \faIcon{flag}          & \textbf{Nationality} & Czech                                                         \\ % Nationality
-            \faIcon{phone}         & \textbf{Phone}       & +420 728 466 416                                              \\ % Mobile phone
-            \faIcon{envelope}      & \textbf{Email}       & \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com}  \\ % Email address
-            \faIcon{github}        & \textbf{GitHub}      & \href{https://github.com/tomasherman}{github.com/tomasherman} \\
-            \faIcon{language}      & \textbf{Languages}   & Czech: \textit{Native}                                        \\
-            &                      & English: \textit{Very good}
+        \begin{tabular}{ m{0.1em} m{5.5em} m{12em} } % Enables tabbing
+            \faicon{map}           & \textbf{Address}     & Zurich,                                                       \\
+            &                      & Switzerland                                                \\% Address line 2
+            \faicon{birthday-cake} & \textbf{Birthday}    & 21$^{st}$ February 1989                                       \\ % Date of birth
+            \faicon{flag}          & \textbf{Nationality} & Czech                                                         \\ % Nationality
+            \faicon{phone}         & \textbf{Phone}       & +420 728 466 416                                              \\ % Mobile phone
+            &                      & +410 778 09 51 34                                             \\ % Mobile phone
+            \faicon{envelope}      & \textbf{Email}       & \href{mailto:tomas.herman@gmail.com}{tomas.herman@gmail.com}  \\ % Email address
+            \faicon{github}        & \textbf{GitHub}      & \href{https://github.com/tomasherman}{github.com/tomasherman} \\
+            \faicon{language}      & \textbf{Languages}   & Czech: \textit{Native}                                        \\
+            &                      & English: \textit{Fluent}
 
         \end{tabular}}
     \hfill % Horizontal space between the two blocks
@@ -85,13 +86,13 @@
 
     \job
     {Aug 2021 -}{Present}
-    {Avast Software, Prague}
+    {Avast Software, Prague \& Zurich}
     {http://www.avast.com}
     {Senior Software/Data engineer}
-    {After \href{https://www.avast.com/en-us/omni}{Omni project} was cancelled and my team dissolved, I joined an existing Data Lake team. I was tasked with making various improvements
-    to many of the existing components of the big data solution. Most notable of which was to participate on migration and modernisation of the components from on-prem Cloudera stack to a Cloud based solution.\\
+    {After \href{https://www.avast.com/en-us/omni}{Omni project} was cancelled and my team dissolved, I joined a Big Data team. I was tasked with making various improvements
+    to many of the existing components of the big data solution. Most notably, I participated on migration and modernisation of on-prem big data solution to GCP. In addition to programming and redesigning of old services, this included a lot of Ops work as well (setup of terraform, GKE, monitoring \& alerting).\\
 
-    \jobtechnologies{Scala, Java, Kafka, Kubernetes, GCP}}
+    \jobtechnologies{Scala, Java, Kafka, Kubernetes, GCP, Terraform}}
 
 
     \job
@@ -99,9 +100,7 @@
     {Avast Software, Prague}
     {http://www.avast.com}
     {Team Lead, Senior Software engineer}
-    {Promoted to lead a team of 3 (and later 6) backend-developers at \href{https://www.avast.com/en-us/omni}{Omni project}. In addition to Team Lead duties (1 on 1s, Sprint plannings, hiring (for mine and other teams) etc), I also spent a lot of time
-    talking to Product about new features, improvements and ideas. I helped design said features and make sure they get implemented on time and in adequate quality. I took care about making sure that
-    estimates are realistic and what we commit to is feasible and relevant. \\
+    {Promoted to lead a team of 3 (and later 6) backend-developers at \href{https://www.avast.com/en-us/omni}{Omni project}. In addition to Team Lead duties (1 on 1s, Sprint plannings, hiring (for my and other teams)), I also spent a lot of time talking to Product about new features, improvements and ideas. I helped design said features and make sure they get implemented on time and in adequate quality. I took care about making sure that estimates are realistic and what we commit to is feasible and relevant. \\
 
     \jobtechnologies{Scala, Cassandra, Kafka, RabbitMQ, Netty, Http4s, cats-effect, Netty, Kubernetes, Helm, AWS, Terraform}}
 
@@ -112,9 +111,8 @@
     {Avast Software, Prague}
     {http://www.avast.com}
     {Software Engineer}
-    {As a Software Engineer I worked on many different services, all related to providing/processing data to/from Avast AntiVirus and other supporting systems. In addition to coding,
-        I played a big role in introducing (Scala) Functional Programming to engineers that were already working in \emph{Scala as a better Java} mode.
-    To do that, I (with few others) prepared many talks, libraries, workshops etc. \\ Some interesting projects I worked on:
+    {I worked on various services related to Avast AntiVirus and other supporting systems. In addition to coding,
+        I played a big role in introducing (Scala) Functional Programming to other engineers. I (with few others) prepared many talks, libraries, workshops etc. \\ Some interesting projects I worked on:
         \begin{itemize}
             \item DNS proxy written in Netty \& Scala
             \item System for scanning Android APKs for Avast partners
@@ -130,7 +128,7 @@
     {Golem Trading for Wikidi, Prague, Czech Republic}
     {https://www.golemtrader.com/}
     {Software engineer}
-    {I returned to Wikidi to work in a very small team on Golem trading platform. I worked on \emph{Trader} app which made decision about trading and I also wrote an UI for the founder/thought leader to watch/control what the trader is doing. Eventually I became the lead for the platform. \\
+    {I returned to Wikidi to work in a very small team on Golem trading platform. I worked on \emph{Trader} app which made decision about trading and I also wrote an UI for the founder/thought leader to watch/control what the trader is doing. Eventually, I became the lead for the platform. \\
     \jobtechnologies{Java, Kotlin, \href{https://en.wikipedia.org/wiki/Financial_Information_eXchange}{FIX}, ReactJS, Google Sheets updated via Python}}
 
 %------------------------------------------------
@@ -177,8 +175,8 @@
     \skillgroup{Programming Languages}
     {
         \textit{Scala} - Lot of experience with Typelevel stack (http4s, cats-effect, etc), weapon of choice\\
-    \textit{Python} - Used in past and for ad-hoc scripts etc.\\
     \textit{Java} - Used in past and at University\\
+    \textit{Python} - Used in past and for ad-hoc scripts etc.\\
     }
 
 %------------------------------------------------
@@ -206,7 +204,7 @@
 
     \interestsgroup{
         \interest{Running, hiking, weight-lifting}
-        \interest{Rock climbing - teaching and practicing}
+        \interest{(Teaching) Rock climbing - 5+ years of teaching experience as an instructor}
         \interest{Investing and finance}
     }
 
@@ -216,12 +214,6 @@
 %----------------------------------------------------------------------------------------
 
 
-    \section{Others}
-    \skillgroup{Rock Climbing instructor}
-    {
-        \textit{Rock/Sport climbing instructor qualification by \href{https://www.horosvaz.cz/}{Czech rock climbing association}}\\
-        \textit{5 years of teaching rock-climbing to beginners as a hobby}
-    }
 
 %----------------------------------------------------------------------------------------
 %	REFEREE SECTION
